@@ -71,5 +71,3 @@ This will capture images and put it in folder specified in capture_images.py
 
 12. The final step is to use categorise_objects.py script to categorize all the captured images into their respective classes, and 'train' , 'val' directories with a 90:10 split correspondingly. 
 
-
-![image](https://user-images.githubusercontent.com/12128767/146377344-a6748810-b44f-4930-9c8e-870042105aa8.png)
