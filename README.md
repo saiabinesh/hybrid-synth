@@ -1,19 +1,22 @@
-# hybrid-synth
-A Hybrid Synthetic Data Generation Pipeline that Outperforms Real Data
+# A Hybrid Synthetic Data Generation Pipeline that Outperforms Real Data
 
+We present below the framework for synthetic data collection that is efficient in terms of time taken to collect and annotate data, which makes use of free and open source software tools and 3D assets. Our approach provides a large number of systematic variations in synthetic image generation parameters. The approach is highly effective, resulting in a deep learning model with a top-1 accuracy of 72% on the ObjectNet data, which is a new state-of-the-art result. 
 
-Installation steps
+## Installation steps
 Install dependencies for AirSim and build AirSim for Windows for the "Blocks" environment in Unreal Engine, from
 https://microsoft.github.io/AirSim/build_windows/
 
-Sample files to reproduce experiments done on a subset of ObjectNet can be found below. The files belong to the following 10 classes. 
- Mug, Drill, Umbrella, TV, Cell Phone, Chair, Bicycle, Tennis Racket, Stuffed Animal and Vase.
+Supplementary files for generating a dataset to test on a subset of the dataset "ObjectNet" [1] can be found below. The files belong to the following 10 classes. Mug, Drill, Umbrella, TV, Cell Phone, Chair, Bicycle, Tennis Racket, Stuffed Animal and Vase. There are two zip files, one for the 3d models and the other for the backgrounds/floors. 
+
 https://nuigalwayie-my.sharepoint.com/:f:/g/personal/s_natarajan3_nuigalway_ie/EulIXY1YPn1Glbsn2FC2pRcB9g4DweYhomysxsCHpUr__A?e=SFE3m2
+
+## Procedure
+The procedure below can be used to generate a synthetic dataset for image classification. 3d models for those classes have to be downloaded for that.
 
 1. Script to generate the objects and their backgrounds/floors in the Blocks environment is 
 	generate_objects_and_floors.py
-2. This script has to be placed inside your content folder in Blocks  project
-	D:\AirSim\UE4.24_v4\AirSim\Unreal\Environments\Blocks\Content\Python
+2. This script has to be placed inside your content folder in Blocks  project. Example: D:\Unreal\Environments\Blocks
+
 3. Downloaded 3d models for the object classes have to placed somewhere inside the ..\Blocks\Content folder with one folder for each object class.
 Both Free and paid 3d models can be sourced from 3d market places in many popular formats such as .fbx or in the native Unreal engine asset format .uasset. 
 The 3d model files in other formats such as fbx have to drag and dropped inside the Contents\Your-models-folder inside Unreal Engine explorer. That way, the model files will be converted accordingly.
@@ -70,4 +73,7 @@ It takes two arguments
 This will capture images and put it in folder specified in capture_images.py
 
 12. The final step is to use categorise_objects.py script to categorize all the captured images into their respective classes, and 'train' , 'val' directories with a 90:10 split correspondingly. 
+
+[1] - Barbu, A., Mayo, D., Alverio, J., Luo, W., Wang, C., Gutfreund, D., Tenenbaum, J.B., & Katz, B. (2019). ObjectNet: A large-scale bias-controlled dataset for pushing the limits of object recognition models. NeurIPS.
+
 
