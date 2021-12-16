@@ -1,0 +1,35 @@
+﻿{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+	  "CameraDefaults": {
+      "CaptureSettings": [
+        {
+          "ImageType": 0,
+          "Width": 1024,
+          "Height": 1024,
+          "FOV_Degrees": 58.5,
+          "AutoExposureSpeed": 60,
+          "MotionBlurAmount": 0,
+          "OrthoWidth": 5.12,
+    "MotionBlurAmount": 0,
+    "AutoExposureMaxBrightness": 0.64,
+    "AutoExposureMinBrightness": 0.03,
+    "TargetGamma":0.6
+        },
+		 {
+          "ImageType": 5,
+          "Width": 1024,
+          "Height": 1024,
+          "FOV_Degrees": 58.5,
+          "AutoExposureSpeed": 60,
+          "MotionBlurAmount": 0,
+          "OrthoWidth": 5.12,
+    "MotionBlurAmount": 0,
+    "AutoExposureMaxBrightness": 0.64,
+    "AutoExposureMinBrightness": 0.03,
+    "TargetGamma":1
+       }
+    ]
+  },
+  "SimMode": "ComputerVision"
+}
