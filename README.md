@@ -69,7 +69,7 @@ It takes two arguments
 	2. Similar to previous script, the total number of 3d models for all object classes combined. (Default value is 65 for the sample case)
 
 
-11. Replace settings.json (Usually in Documents folder) , with settings.json file in link,  to reflect the 1024x1024 resolution.
+11. Replace settings.json (Usually in Documents folder) , with settings.json file in link,  to reflect the 1024x1024 resolution. The image resolution, field of view, and other camera and image parameters can be modified in settings.json.
 This will capture images and put it in folder specified in capture_images.py
 
 12. The final step is to use categorise_objects.py script to categorize all the captured images into their respective classes, and 'train' , 'val' directories with a 90:10 split correspondingly. 
