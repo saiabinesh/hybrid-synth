@@ -1,6 +1,6 @@
 # A Hybrid Synthetic Data Generation Pipeline that Outperforms Real Data
 
-We present below the framework for synthetic data collection that is efficient in terms of time taken to collect and annotate data, which makes use of free and open source software tools and 3D assets. Our approach provides a large number of systematic variations in synthetic image generation parameters. The approach is highly effective, resulting in a deep learning model with a top-1 accuracy of 72% on the ObjectNet data, which is a new state-of-the-art result. 
+We present below the framework for synthetic data collection that is efficient in terms of time taken to collect and annotate data, which makes use of free and open source software tools and 3D assets. Our approach provides a large number of systematic variations in synthetic image generation parameters. The approach is highly effective, resulting in a deep learning model with a top-1 accuracy of 72% on the ObjectNet data, which is a new state-of-the-art result. A sample dataset for 10 classes in the ObjectNet can be downloaded from https://ieee-dataport.org/documents/hybrid-synthetic-data-outperforms-real-data-objectnet. To flexibly generate data for any class, the steps below can be followed.   
 
 ## Installation steps
 Install dependencies for AirSim and build AirSim for Windows for the "Blocks" environment in Unreal Engine, from
